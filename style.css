@@ -1,0 +1,22 @@
+.copy {
+  font-size: 16px; }
+  .copy > *:first-child {
+    margin-top: 0;
+    padding-top: 0; }
+  .copy > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+
+.clear-bottom:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.cap {
+  max-width: 1200px;
+  padding-left: 20px !important;
+  padding-right: 20px !important; }
+  @media screen and (min-width: 1200px) {
+    .cap {
+      padding-right: 2% !important;
+      padding-left: 2% !important; } }

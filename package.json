@@ -1,0 +1,17 @@
+{
+  "name": "ch",
+  "version": "1.0.0",
+  "description": "ch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fritzhealy/carbonhouse.git"
+  },
+  "author": "",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}
