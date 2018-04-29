@@ -49,54 +49,59 @@ article.events {
                         margin-right: 0;
                     }
                 }
-                img {
-                    width: 100%;
+                >a {
                     display: block;
-                }
-                .date {
-                    background-color: $color__black;
-                    .day {
-                        float: right;
-                        background-image: url(./images/rectangle.png);
-                        background-position: center;
-                        background-size: 100% auto;
-                        background-repeat: no-repeat;
-                        position: relative;
-                        top: -8px;
-                        text-align: center;
-                        color: $color__pink;
-                        font-size: 16px;
-                        padding: 10px 20px 10px 30px;
-                        text-transform: uppercase;
-                        font-family: $font_one;
-                        letter-spacing: 1px;
-                    }
-                    .calendar {
-                        color: $color__pink;
-                        font-size: 16px;
-                        text-transform: uppercase;
-                        font-family: $font_one;
-                        letter-spacing: 1px;
-                        padding: 10px 20px;
-
-                    }
-                }
-                .artist {
+                    text-decoration: none;
+                    height: 100%;
                     background-color: white;
-                    text-align: center;
-                    padding: 30px 20px;
-                    h3 {
-                        color: $color__pink;
-                        margin: 0 0 8px 0;
-                        font-size: 25px;
-                        font-family: $font_one;
-                        letter-spacing: 2px;
-                        text-transform: uppercase;
+                    img {
+                        width: 100%;
+                        display: block;
                     }
-                    .tour {
-                        font-family: $font_two;
-                        font-style: italic;
-                        font-size: 16px;
+                    .date {
+                        background-color: $color__black;
+                        .day {
+                            float: right;
+                            background-image: url(./images/rectangle.png);
+                            background-position: center;
+                            background-size: 100% auto;
+                            background-repeat: no-repeat;
+                            position: relative;
+                            top: -8px;
+                            text-align: center;
+                            color: $color__pink;
+                            font-size: 16px;
+                            padding: 10px 20px 10px 30px;
+                            text-transform: uppercase;
+                            font-family: $font_one;
+                            letter-spacing: 1px;
+                        }
+                        .calendar {
+                            color: $color__pink;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            font-family: $font_one;
+                            letter-spacing: 1px;
+                            padding: 10px 20px;
+
+                        }
+                    }
+                    .artist {
+                        text-align: center;
+                        padding: 30px 20px;
+                        h3 {
+                            color: $color__pink;
+                            margin: 0 0 8px 0;
+                            font-size: 25px;
+                            font-family: $font_one;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                        }
+                        .tour {
+                            font-family: $font_two;
+                            font-style: italic;
+                            font-size: 16px;
+                        }
                     }
                 }
             }
