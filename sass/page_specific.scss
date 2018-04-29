@@ -1,0 +1,114 @@
+article.events {
+    background-color: $color__medium-grey;
+    >.cap {
+        padding: 20px 0 48px 0;
+        >header.row-1 {
+            padding: 0 0 15px 0;
+            margin: 0 0 30px 0;
+            border-bottom: 2px solid $color__black;
+            h2 {
+                font-family: $font_one;
+                font-size: 28px;
+                float: left;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            .layout {
+                float: right;
+                #grid {
+                    margin: 0 10px 0 0;
+                }
+                #grid, #list {
+                    float: left;
+                    cursor: pointer;
+                    padding: 10px;
+                    &.active {
+                        background-color: white;
+                    }
+                    img {
+                        display: block;
+                        width: 28px;
+                    }
+                }
+            }
+        }
+        >.row-2 {
+            section.event {
+                width: calc(1/3*100% - 8px);
+                margin: 0 6px 12px 6px;
+                float: left;
+                line-height: 1.2;
+                &.first {
+                    @media screen and (min-width: $deskwidth) {
+                        margin-left: 0;
+                    }
+                }
+                &.last {
+                    @media screen and (min-width: $deskwidth){
+                        margin-right: 0;
+                    }
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                .date {
+                    background-color: $color__black;
+                    .day {
+                        float: right;
+                        background-image: url(./images/rectangle.png);
+                        background-position: center;
+                        background-size: 100% auto;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        top: -8px;
+                        text-align: center;
+                        color: $color__pink;
+                        font-size: 16px;
+                        padding: 10px 20px 10px 30px;
+                        text-transform: uppercase;
+                        font-family: $font_one;
+                    }
+                    .calendar {
+                        color: $color__pink;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-family: $font_one;
+                        padding: 10px 20px;
+
+                    }
+                }
+                .artist {
+                    background-color: white;
+                    text-align: center;
+                    padding: 30px 20px;
+                    h3 {
+                        color: $color__pink;
+                        margin: 0 0 8px 0;
+                        font-size: 25px;
+                        font-family: $font_one;
+                        text-transform: uppercase;
+                    }
+                    .tour {
+                        font-family: $font_two;
+                        font-style: italic;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+.newsletter {
+    .signup-box {
+        h2 {
+
+        }
+        .tagline {
+
+        }
+        a {
+
+        }
+    }
+}

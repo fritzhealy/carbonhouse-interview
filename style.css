@@ -70,11 +70,12 @@ body * {
     align-items: center;
     -ms-flex-item-align: center;
     justify-content: space-between; }
-    #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper > .connect {
+    #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper > a.connect {
       font-family: "Oswald", sans-serif;
       color: #de53f3;
       text-transform: uppercase;
       font-size: 12px;
+      text-decoration: none;
       margin: 0 10px; }
     #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper .social {
       margin: 0 30px 0 10px; }
@@ -151,7 +152,7 @@ body * {
           display: block;
           width: 16px;
           cursor: pointer; }
-  #masthead > .row-1 > .cap-nopad > .outer-wrapper .login a {
+  #masthead > .row-1 > .cap-nopad > .outer-wrapper a.login {
     padding: 10px 42px 10px 20px;
     cursor: pointer;
     background-color: #de53f3;
@@ -170,12 +171,12 @@ body * {
     justify-content: center;
     color: inherit;
     text-decoration: none; }
-    #masthead > .row-1 > .cap-nopad > .outer-wrapper .login a .text {
+    #masthead > .row-1 > .cap-nopad > .outer-wrapper a.login .text {
       color: white;
       font-family: "Oswald", sans-serif;
       font-size: 12px;
       text-transform: uppercase; }
-    #masthead > .row-1 > .cap-nopad > .outer-wrapper .login a img {
+    #masthead > .row-1 > .cap-nopad > .outer-wrapper a.login img {
       margin: 0 0 0 10px;
       display: block;
       width: 26px; }
@@ -235,3 +236,81 @@ body * {
             text-transform: uppercase;
             font-family: "Oswald", sans-serif;
             font-size: 18px; }
+
+article.events {
+  background-color: #e5e5e5; }
+  article.events > .cap {
+    padding: 20px 0 48px 0; }
+    article.events > .cap > header.row-1 {
+      padding: 0 0 15px 0;
+      margin: 0 0 30px 0;
+      border-bottom: 2px solid #000000; }
+      article.events > .cap > header.row-1 h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 28px;
+        float: left;
+        margin: 0;
+        text-transform: uppercase; }
+      article.events > .cap > header.row-1 .layout {
+        float: right; }
+        article.events > .cap > header.row-1 .layout #grid {
+          margin: 0 10px 0 0; }
+        article.events > .cap > header.row-1 .layout #grid, article.events > .cap > header.row-1 .layout #list {
+          float: left;
+          cursor: pointer;
+          padding: 10px; }
+          article.events > .cap > header.row-1 .layout #grid.active, article.events > .cap > header.row-1 .layout #list.active {
+            background-color: white; }
+          article.events > .cap > header.row-1 .layout #grid img, article.events > .cap > header.row-1 .layout #list img {
+            display: block;
+            width: 28px; }
+    article.events > .cap > .row-2 section.event {
+      width: calc(1/3*100% - 8px);
+      margin: 0 6px 12px 6px;
+      float: left;
+      line-height: 1.2; }
+      @media screen and (min-width: 1200px) {
+        article.events > .cap > .row-2 section.event.first {
+          margin-left: 0; } }
+      @media screen and (min-width: 1200px) {
+        article.events > .cap > .row-2 section.event.last {
+          margin-right: 0; } }
+      article.events > .cap > .row-2 section.event img {
+        width: 100%;
+        display: block; }
+      article.events > .cap > .row-2 section.event .date {
+        background-color: #000000; }
+        article.events > .cap > .row-2 section.event .date .day {
+          float: right;
+          background-image: url(./images/rectangle.png);
+          background-position: center;
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          position: relative;
+          top: -8px;
+          text-align: center;
+          color: #de53f3;
+          font-size: 16px;
+          padding: 10px 20px 10px 30px;
+          text-transform: uppercase;
+          font-family: "Oswald", sans-serif; }
+        article.events > .cap > .row-2 section.event .date .calendar {
+          color: #de53f3;
+          font-size: 16px;
+          text-transform: uppercase;
+          font-family: "Oswald", sans-serif;
+          padding: 10px 20px; }
+      article.events > .cap > .row-2 section.event .artist {
+        background-color: white;
+        text-align: center;
+        padding: 30px 20px; }
+        article.events > .cap > .row-2 section.event .artist h3 {
+          color: #de53f3;
+          margin: 0 0 8px 0;
+          font-size: 25px;
+          font-family: "Oswald", sans-serif;
+          text-transform: uppercase; }
+        article.events > .cap > .row-2 section.event .artist .tour {
+          font-family: "Merriweather", serif;
+          font-style: italic;
+          font-size: 16px; }
