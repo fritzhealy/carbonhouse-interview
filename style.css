@@ -8,6 +8,9 @@ body * {
   box-sizing: border-box;
   color: #000000; }
 
+img {
+  max-width: 100%; }
+
 .copy {
   font-size: 16px; }
   .copy > *:first-child {
@@ -245,6 +248,255 @@ body * {
             font-family: "Oswald", sans-serif;
             letter-spacing: 1px;
             font-size: 18px; }
+
+#colophon > .cap {
+  padding: 50px 0; }
+  #colophon > .cap > .col-1 {
+    margin-right: 6px;
+    width: calc(50% - 6px); }
+  #colophon > .cap > .col-2 {
+    margin-left: 6px;
+    width: calc(50% - 6px); }
+  #colophon > .cap .col {
+    float: left;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    align-content: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-item-align: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    -ms-flex-direction: column; }
+    #colophon > .cap .col > header h2 {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      font-size: 25px;
+      letter-spacing: 1px;
+      margin: 0 10px 0 0;
+      display: inline-block; }
+    #colophon > .cap .col > header .descriptor {
+      color: #de53f3;
+      font-style: italic;
+      font-family: "Merriweather", serif;
+      font-size: 16px;
+      display: inline-block; }
+    #colophon > .cap .col .plugin {
+      margin: 20px 0 0 0;
+      -webkit-box-flex: 1 1 auto;
+      -moz-box-flex: 1 1 auto;
+      flex: 1 1 auto;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      display: flex;
+      /* NEW, Spec - Firefox, Chrome, Opera */
+      align-content: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      -ms-flex-item-align: stretch;
+      justify-content: flex-start;
+      flex-direction: column;
+      -ms-flex-direction: column; }
+      #colophon > .cap .col .plugin.twitter .social.bar ul {
+        margin: 0;
+        padding: 0; }
+        #colophon > .cap .col .plugin.twitter .social.bar ul li {
+          background-color: black;
+          color: white;
+          text-align: center;
+          font-family: "Oswald", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 16px;
+          padding: 15px;
+          line-height: 1.2;
+          text-decoration: none;
+          display: block;
+          float: left;
+          width: 33.33333%;
+          border-right: 1px solid white;
+          cursor: pointer; }
+          #colophon > .cap .col .plugin.twitter .social.bar ul li:last-child {
+            border-right: none; }
+          #colophon > .cap .col .plugin.twitter .social.bar ul li.active {
+            background-image: url(./images/pink-box.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; }
+          #colophon > .cap .col .plugin.twitter .social.bar ul li i {
+            margin: 0 5px 0 0;
+            font-size: 20px;
+            display: inline-block;
+            color: white; }
+      #colophon > .cap .col .plugin.twitter .view {
+        -webkit-box-flex: 1 1 auto;
+        -moz-box-flex: 1 1 auto;
+        flex: 1 1 auto;
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;
+        /* NEW, Spec - Firefox, Chrome, Opera */
+        align-content: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        -ms-flex-item-align: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        margin: 20px 0 0 0;
+        padding: 10px 6px 20px 6px;
+        background-color: #e5e5e5; }
+        #colophon > .cap .col .plugin.twitter .view > .row-1 {
+          padding: 0 20px 10px 20px;
+          display: -webkit-box;
+          /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+          display: -ms-flexbox;
+          /* TWEENER - IE 10 */
+          display: -webkit-flex;
+          /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+          display: flex;
+          /* NEW, Spec - Firefox, Chrome, Opera */
+          align-content: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-item-align: center;
+          justify-content: space-between; }
+          #colophon > .cap .col .plugin.twitter .view > .row-1 > .col-1 {
+            font-family: "Oswald", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 16px; }
+            #colophon > .cap .col .plugin.twitter .view > .row-1 > .col-1 .pink {
+              color: #de53f3; }
+          #colophon > .cap .col .plugin.twitter .view > .row-1 > .col-2 i {
+            color: #de53f3;
+            cursor: pointer;
+            font-size: 28px;
+            display: inline-block; }
+            #colophon > .cap .col .plugin.twitter .view > .row-1 > .col-2 i:first-child {
+              margin-right: 10px; }
+        #colophon > .cap .col .plugin.twitter .view > .row-2 {
+          -webkit-box-flex: 1 1 auto;
+          -moz-box-flex: 1 1 auto;
+          flex: 1 1 auto;
+          overflow: hidden; }
+          #colophon > .cap .col .plugin.twitter .view > .row-2 .post {
+            margin: 0 6px;
+            height: 100%;
+            width: 220px;
+            float: left;
+            background-color: white;
+            display: -webkit-box;
+            /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            display: -webkit-flex;
+            /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;
+            /* NEW, Spec - Firefox, Chrome, Opera */
+            align-content: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-item-align: stretch;
+            justify-content: flex-start;
+            flex-direction: column;
+            -ms-flex-direction: column; }
+            #colophon > .cap .col .plugin.twitter .view > .row-2 .post .meta {
+              text-transform: uppercase;
+              font-size: 16px;
+              font-family: "Oswald", sans-serif;
+              letter-spacing: 1px;
+              padding: 15px; }
+              #colophon > .cap .col .plugin.twitter .view > .row-2 .post .meta i {
+                font-size: 20px;
+                color: #de53f3; }
+            #colophon > .cap .col .plugin.twitter .view > .row-2 .post .copy {
+              padding: 0 15px 15px 15px;
+              font-family: "Lato", sans-serif;
+              font-size: 12px;
+              letter-spacing: 1px; }
+              #colophon > .cap .col .plugin.twitter .view > .row-2 .post .copy a {
+                color: #de53f3; }
+            #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar {
+              background-color: #de53f3;
+              margin: auto 0 0 0;
+              padding: 5px 15px;
+              display: -webkit-box;
+              /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+              display: -ms-flexbox;
+              /* TWEENER - IE 10 */
+              display: -webkit-flex;
+              /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+              display: flex;
+              /* NEW, Spec - Firefox, Chrome, Opera */
+              align-content: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -ms-flex-item-align: center;
+              justify-content: space-between; }
+              #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .date-time {
+                color: white;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-family: "Oswald", sans-serif;
+                letter-spacing: 1px; }
+              #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .share a {
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 2px; }
+                #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .share a:first-child {
+                  margin-left: 0; }
+                #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .share a:last-child {
+                  margin-right: 0; }
+                #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .share a i {
+                  font-size: 12px;
+                  color: white; }
+      #colophon > .cap .col .plugin.map .address.bar {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
+        padding: 15px;
+        line-height: 1.2; }
+        #colophon > .cap .col .plugin.map .address.bar .light {
+          font-weight: 300;
+          font-size: 14px;
+          text-transform: initial;
+          color: white;
+          display: inline-block;
+          margin-left: 20px; }
+      #colophon > .cap .col .plugin.map .view {
+        -webkit-box-flex: 1 1 auto;
+        -moz-box-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 10px;
+        position: relative;
+        background-color: #f5f5f5; }
+        #colophon > .cap .col .plugin.map .view img.map {
+          width: 100%;
+          display: block; }
+        #colophon > .cap .col .plugin.map .view img.wayfairer {
+          position: absolute;
+          top: 25%;
+          left: 25%;
+          z-index: 1; }
 
 article.events {
   background-color: #e5e5e5; }
