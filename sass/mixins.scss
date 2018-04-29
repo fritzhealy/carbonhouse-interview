@@ -1,0 +1,33 @@
+@mixin flexbox(){
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+@mixin flexbox-flex($v1, $v2, $v3){
+	-webkit-box-flex: $v1 $v2 $v3;
+	-moz-box-flex: $v1 $v2 $v3;
+	flex: $v1 $v2 $v3;
+}
+@mixin flexbox-justify($v){
+	justify-content: $v;
+}
+@mixin flexbox-align-items($v){
+	align-items: $v;
+	-ms-flex-item-align: $v;
+}
+@mixin flexbox-align-content($v){
+	align-content: $v;
+	-ms-flex-align: $v;
+}
+@mixin flexbox-direction($v){
+	flex-direction: $v;
+	-ms-flex-direction: $v;
+}
+@mixin flexbox-order($v){
+	-ms-flex-order: $v;
+	order: $v;
+}
+@mixin flexbox-wrap($v){
+	flex-wrap: $v;
+}
