@@ -72,6 +72,7 @@ body * {
     justify-content: space-between; }
     #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper > a.connect {
       font-family: "Oswald", sans-serif;
+      letter-spacing: 1px;
       color: #de53f3;
       text-transform: uppercase;
       font-size: 12px;
@@ -114,36 +115,42 @@ body * {
           border: none;
           color: #000000;
           font-family: "Oswald", sans-serif;
+          letter-spacing: 1px;
           font-size: 12px;
           font-weight: 300;
           text-transform: uppercase; }
           #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper #search .wrapper input:-ms-input-placeholder {
             color: #000000;
             font-family: "Oswald", sans-serif;
+            letter-spacing: 1px;
             font-size: 12px;
             font-weight: 300;
             text-transform: uppercase; }
           #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper #search .wrapper input::-moz-placeholder {
             color: #000000;
             font-family: "Oswald", sans-serif;
+            letter-spacing: 1px;
             font-size: 12px;
             font-weight: 300;
             text-transform: uppercase; }
           #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper #search .wrapper input:-moz-placeholder {
             color: #000000;
             font-family: "Oswald", sans-serif;
+            letter-spacing: 1px;
             font-size: 12px;
             font-weight: 300;
             text-transform: uppercase; }
           #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper #search .wrapper input::-webkit-input-placeholder {
             color: #000000;
             font-family: "Oswald", sans-serif;
+            letter-spacing: 1px;
             font-size: 12px;
             font-weight: 300;
             text-transform: uppercase; }
           #masthead > .row-1 > .cap-nopad > .outer-wrapper > .wrapper #search .wrapper input:placeholder {
             color: #000000;
             font-family: "Oswald", sans-serif;
+            letter-spacing: 1px;
             font-size: 12px;
             font-weight: 300;
             text-transform: uppercase; }
@@ -174,6 +181,7 @@ body * {
     #masthead > .row-1 > .cap-nopad > .outer-wrapper a.login .text {
       color: white;
       font-family: "Oswald", sans-serif;
+      letter-spacing: 1px;
       font-size: 12px;
       text-transform: uppercase; }
     #masthead > .row-1 > .cap-nopad > .outer-wrapper a.login img {
@@ -235,6 +243,7 @@ body * {
             text-decoration: none;
             text-transform: uppercase;
             font-family: "Oswald", sans-serif;
+            letter-spacing: 1px;
             font-size: 18px; }
 
 article.events {
@@ -247,6 +256,7 @@ article.events {
       border-bottom: 2px solid #000000; }
       article.events > .cap > header.row-1 h2 {
         font-family: "Oswald", sans-serif;
+        letter-spacing: 1px;
         font-size: 28px;
         float: left;
         margin: 0;
@@ -293,12 +303,14 @@ article.events {
           font-size: 16px;
           padding: 10px 20px 10px 30px;
           text-transform: uppercase;
-          font-family: "Oswald", sans-serif; }
+          font-family: "Oswald", sans-serif;
+          letter-spacing: 1px; }
         article.events > .cap > .row-2 section.event .date .calendar {
           color: #de53f3;
           font-size: 16px;
           text-transform: uppercase;
           font-family: "Oswald", sans-serif;
+          letter-spacing: 1px;
           padding: 10px 20px; }
       article.events > .cap > .row-2 section.event .artist {
         background-color: white;
@@ -309,8 +321,48 @@ article.events {
           margin: 0 0 8px 0;
           font-size: 25px;
           font-family: "Oswald", sans-serif;
+          letter-spacing: 2px;
           text-transform: uppercase; }
         article.events > .cap > .row-2 section.event .artist .tour {
           font-family: "Merriweather", serif;
           font-style: italic;
           font-size: 16px; }
+
+.newsletter {
+  background-image: url(./images/purple-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 90px 20px; }
+  .newsletter > .cap .signup-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px; }
+    .newsletter > .cap .signup-box h2 {
+      margin: 0;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: white;
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 2px;
+      line-height: 1.2; }
+    .newsletter > .cap .signup-box .tagline {
+      color: #de53f3;
+      font-family: "Merriweather", serif;
+      font-size: 18px;
+      font-style: italic;
+      margin: 5px 0 0 0; }
+    .newsletter > .cap .signup-box a {
+      margin: 40px 0 0 0;
+      font-size: 16px;
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 1px;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px 60px;
+      text-decoration: none;
+      border: 2px solid white;
+      display: inline-block; }

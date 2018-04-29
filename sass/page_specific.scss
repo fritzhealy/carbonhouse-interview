@@ -8,6 +8,7 @@ article.events {
             border-bottom: 2px solid $color__black;
             h2 {
                 font-family: $font_one;
+                letter-spacing: 1px;
                 font-size: 28px;
                 float: left;
                 margin: 0;
@@ -68,12 +69,14 @@ article.events {
                         padding: 10px 20px 10px 30px;
                         text-transform: uppercase;
                         font-family: $font_one;
+                        letter-spacing: 1px;
                     }
                     .calendar {
                         color: $color__pink;
                         font-size: 16px;
                         text-transform: uppercase;
                         font-family: $font_one;
+                        letter-spacing: 1px;
                         padding: 10px 20px;
 
                     }
@@ -87,6 +90,7 @@ article.events {
                         margin: 0 0 8px 0;
                         font-size: 25px;
                         font-family: $font_one;
+                        letter-spacing: 2px;
                         text-transform: uppercase;
                     }
                     .tour {
@@ -100,15 +104,47 @@ article.events {
     }
 }
 .newsletter {
-    .signup-box {
-        h2 {
-
-        }
-        .tagline {
-
-        }
-        a {
-
+    background-image: url(./images/purple-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px 20px;
+    >.cap {
+        .signup-box {
+            background-color: rgba(0,0,0,0.7);
+            width: 55%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 60px 20px;
+            h2 {
+                margin: 0;
+                font-size: 35px;
+                text-transform: uppercase;
+                color: white;
+                font-family: $font_one;
+                letter-spacing: 2px;
+                line-height: 1.2;
+            }
+            .tagline {
+                color: $color__pink;
+                font-family: $font_two;
+                font-size: 18px;
+                font-style: italic;
+                margin: 5px 0 0 0;
+            }
+            a {
+                margin: 40px 0 0 0;
+                font-size: 16px;
+                font-family: $font_one;
+                letter-spacing: 1px;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 10px 60px;
+                text-decoration: none;
+                border: 2px solid white;
+                display: inline-block;
+            }
         }
     }
 }

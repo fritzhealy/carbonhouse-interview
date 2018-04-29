@@ -59,6 +59,7 @@ body * {
                     @include flexbox-justify(space-between);
                     >a.connect {
                         font-family: $font_one;
+                        letter-spacing: 1px;
                         color: $color__pink;
                         text-transform: uppercase;
                         font-size: 12px;
@@ -92,12 +93,14 @@ body * {
                                 border: none;
                                 color: $color__black;
                                 font-family: $font_one;
+                                letter-spacing: 1px;
                                 font-size: 12px;
                                 font-weight: 300;
                                 text-transform: uppercase;
                                 &:-ms-input-placeholder {
                                     color: $color__black;
                                     font-family: $font_one;
+                                    letter-spacing: 1px;
                                     font-size: 12px;
                                     font-weight: 300;
                                     text-transform: uppercase;
@@ -105,6 +108,7 @@ body * {
                                 &::-moz-placeholder {
                                     color: $color__black;
                                     font-family: $font_one;
+                                    letter-spacing: 1px;
                                     font-size: 12px;
                                     font-weight: 300;
                                     text-transform: uppercase;
@@ -112,6 +116,7 @@ body * {
                                 &:-moz-placeholder {
                                     color: $color__black;
                                     font-family: $font_one;
+                                    letter-spacing: 1px;
                                     font-size: 12px;
                                     font-weight: 300;
                                     text-transform: uppercase;
@@ -119,6 +124,7 @@ body * {
                                 &::-webkit-input-placeholder {
                                     color: $color__black;
                                     font-family: $font_one;
+                                    letter-spacing: 1px;
                                     font-size: 12px;
                                     font-weight: 300;
                                     text-transform: uppercase;
@@ -126,6 +132,7 @@ body * {
                                 &:placeholder {
                                     color: $color__black;
                                     font-family: $font_one;
+                                    letter-spacing: 1px;
                                     font-size: 12px;
                                     font-weight: 300;
                                     text-transform: uppercase;
@@ -153,6 +160,7 @@ body * {
                     .text {
                         color: white;
                         font-family: $font_one;
+                        letter-spacing: 1px;
                         font-size: 12px;
                         text-transform: uppercase;
 
@@ -206,6 +214,7 @@ body * {
                             text-decoration: none;
                             text-transform: uppercase;
                             font-family: $font_one;
+                            letter-spacing: 1px;
                             font-size: 18px;
                         }
                     }
