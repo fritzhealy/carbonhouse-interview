@@ -467,7 +467,8 @@ img {
       -ms-flex-direction: column; }
       #colophon > .cap .col .plugin.social .social.bar ul {
         margin: 0;
-        padding: 0; }
+        padding: 0;
+        border-top: 2px solid black; }
         #colophon > .cap .col .plugin.social .social.bar ul li {
           background-color: black;
           text-align: center;
@@ -475,7 +476,7 @@ img {
           text-transform: uppercase;
           letter-spacing: 1px;
           font-size: 16px;
-          padding: 15px;
+          padding: 14px;
           line-height: 1.2;
           text-decoration: none;
           display: block;
@@ -492,7 +493,8 @@ img {
             background-image: url(./images/pink-box.jpg);
             background-position: center;
             background-size: cover;
-            background-repeat: no-repeat; }
+            background-repeat: no-repeat;
+            padding: 16px; }
           #colophon > .cap .col .plugin.social .social.bar ul li .text {
             color: white;
             display: none; }
@@ -503,9 +505,12 @@ img {
             transform: scale(1);
             transition: all 0.2s;
             margin: 0 5px 0 0;
-            font-size: 20px;
+            font-size: 25px;
             display: inline-block;
             color: white; }
+            @media screen and (min-width: 900px) {
+              #colophon > .cap .col .plugin.social .social.bar ul li i {
+                font-size: 20px; } }
       #colophon > .cap .col .plugin.social .view {
         display: none;
         -webkit-box-flex: 1 1 auto;
@@ -654,18 +659,22 @@ img {
         letter-spacing: 1px;
         font-size: 16px;
         padding: 15px;
-        line-height: 1.2; }
+        line-height: 1.6; }
+        @media screen and (min-width: 900px) {
+          #colophon > .cap .col .plugin.map .address.bar {
+            line-height: 1.2; } }
         #colophon > .cap .col .plugin.map .address.bar .light {
           font-weight: 300;
           font-size: 14px;
           text-transform: initial;
           color: white;
           display: block;
-          line-height: 1.2; }
+          line-height: 1.6; }
           @media screen and (min-width: 900px) {
             #colophon > .cap .col .plugin.map .address.bar .light {
               display: inline-block;
-              margin-left: 20px; } }
+              margin-left: 20px;
+              line-height: 1.2; } }
       #colophon > .cap .col .plugin.map .view {
         -webkit-box-flex: 1 1 auto;
         -moz-box-flex: 1 1 auto;
@@ -678,9 +687,35 @@ img {
           display: block; }
         #colophon > .cap .col .plugin.map .view img.wayfairer {
           position: absolute;
-          top: 25%;
-          left: 25%;
+          top: 38%;
+          left: 23%;
           z-index: 1; }
+        #colophon > .cap .col .plugin.map .view .descriptor {
+          background-image: url(./images/bubble.png);
+          background-position: center;
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          padding: 20px 20px 20px 30px;
+          position: absolute;
+          top: 34%;
+          left: 30%;
+          z-index: 2; }
+          #colophon > .cap .col .plugin.map .view .descriptor h3 {
+            text-transform: uppercase;
+            color: white;
+            font-family: "Oswald", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0; }
+          #colophon > .cap .col .plugin.map .view .descriptor .address {
+            color: white;
+            font-family: "Oswald", sans-serif;
+            letter-spacing: 1px;
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: 300; }
 
 article.events {
   background-color: #e5e5e5; }

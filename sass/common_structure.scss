@@ -447,6 +447,7 @@ img {
                         ul {
                             margin: 0;
                             padding: 0;
+                            border-top: 2px solid black;
                             li {
                                 background-color: black;
                                 text-align: center;
@@ -454,7 +455,7 @@ img {
                                 text-transform: uppercase;
                                 letter-spacing: 1px;
                                 font-size: 16px;
-                                padding: 15px;
+                                padding: 14px;
                                 line-height: 1.2;
                                 text-decoration: none;
                                 display: block;
@@ -477,6 +478,7 @@ img {
                                     background-position: center;
                                     background-size: cover;
                                     background-repeat: no-repeat;
+                                    padding: 16px;
                                 }
                                 .text {
                                     color: white;
@@ -489,9 +491,12 @@ img {
                                     transform: scale(1);
                                     transition: all 0.2s;
                                     margin: 0 5px 0 0;
-                                    font-size: 20px;
+                                    font-size: 25px;
                                     display: inline-block;
                                     color: white;
+                                    @media screen and (min-width: $midwidth){
+                                        font-size: 20px;
+                                    }
                                 }
                             }
                         }
@@ -631,17 +636,21 @@ img {
                         letter-spacing: 1px;
                         font-size: 16px;
                         padding: 15px;
-                        line-height: 1.2;
+                        line-height: 1.6;
+                        @media screen and (min-width: $midwidth){
+                            line-height: 1.2;
+                        }
                         .light {
                             font-weight: 300;
                             font-size: 14px;
                             text-transform: initial;
                             color: white;
                             display: block;
-                            line-height: 1.2;
+                            line-height: 1.6;
                             @media screen and (min-width: $midwidth){
                                 display: inline-block;
                                 margin-left: 20px;
+                                line-height: 1.2;
                             }
                         }
                     }
@@ -656,10 +665,39 @@ img {
                         }
                         img.wayfairer {
                             position: absolute;
-                            top: 25%;
-                            left: 25%;
+                            top: 38%;
+                            left: 23%;
                             z-index: 1;
                             
+                        }
+                        .descriptor {
+                            background-image: url(./images/bubble.png);
+                            background-position: center;
+                            background-size: 100% auto;
+                            background-repeat: no-repeat;
+                            padding: 20px 20px 20px 30px;
+                            position: absolute;
+                            top: 34%;
+                            left: 30%;
+                            z-index: 2;
+                            h3 {
+                                text-transform: uppercase;
+                                color: white;
+                                font-family: $font_one;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                font-size: 14px;
+                                line-height: 1.6;
+                                margin: 0;
+                            }
+                            .address {
+                                color: white;
+                                font-family: $font_one;
+                                letter-spacing: 1px;
+                                font-size: 14px;
+                                line-height: 1.6;
+                                font-weight: 300;
+                            }
                         }
                     }
                 }
