@@ -2,6 +2,7 @@
     $(document).ready(function(){
         $('.event').matchHeight();
         $('.blocks').matchHeight();
+        $.fn.matchHeight._maintainScroll = true;
 
         var $mobile = $('#mobile-menu');
         $('#hamburger').click(function(){
@@ -69,12 +70,17 @@
                 $post.css({
                     position: 'absolute',
                     top: 0,
-                    height: '100%',
                     left: running_width
                 });
                 running_width += $post.width() + 12;
             });
             $frame.height(max_height);
+            $frame.find('.post').each(function(j, post){
+                $(post).css({
+                    height: '100%'
+                });
+            });
+            $('.blocks').matchHeight();
         }
 
         //initial load

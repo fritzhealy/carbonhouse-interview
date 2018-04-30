@@ -682,47 +682,48 @@ img {
         -moz-box-flex: 1 1 auto;
         flex: 1 1 auto;
         padding: 10px;
-        position: relative;
         background-color: #f5f5f5; }
-        #colophon > .cap .col .plugin.map .view img.map {
-          width: 100%;
-          display: block; }
-        #colophon > .cap .col .plugin.map .view img.wayfairer {
-          position: absolute;
-          bottom: 48%;
-          left: 24%;
-          z-index: 1;
-          width: 30px; }
-        #colophon > .cap .col .plugin.map .view .descriptor {
-          background-image: url(./images/bubble.png);
-          background-position: center;
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          padding: 10px 10px 10px 20px;
-          position: absolute;
-          bottom: calc(48% - 54.5px);
-          left: calc(24% + 40px);
-          z-index: 2; }
-          @media screen and (min-width: 900px) {
-            #colophon > .cap .col .plugin.map .view .descriptor {
-              padding: 20px 20px 20px 30px;
-              bottom: calc(48% - 67px); } }
-          #colophon > .cap .col .plugin.map .view .descriptor h3 {
-            text-transform: uppercase;
-            color: white;
-            font-family: "Oswald", sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 14px;
-            line-height: 1.6;
-            margin: 0; }
-          #colophon > .cap .col .plugin.map .view .descriptor .address {
-            color: white;
-            font-family: "Oswald", sans-serif;
-            letter-spacing: 1px;
-            font-size: 14px;
-            line-height: 1.6;
-            font-weight: 300; }
+        #colophon > .cap .col .plugin.map .view > .wrapper {
+          position: relative; }
+          #colophon > .cap .col .plugin.map .view > .wrapper img.map {
+            width: 100%;
+            display: block; }
+          #colophon > .cap .col .plugin.map .view > .wrapper img.wayfairer {
+            position: absolute;
+            bottom: 48%;
+            left: 24%;
+            z-index: 1;
+            width: 30px; }
+          #colophon > .cap .col .plugin.map .view > .wrapper .descriptor {
+            background-image: url(./images/bubble.png);
+            background-position: center;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding: 10px 10px 10px 20px;
+            position: absolute;
+            bottom: calc(48% - 54.5px);
+            left: calc(24% + 40px);
+            z-index: 2; }
+            @media screen and (min-width: 900px) {
+              #colophon > .cap .col .plugin.map .view > .wrapper .descriptor {
+                padding: 20px 20px 20px 30px;
+                bottom: calc(48% - 67px); } }
+            #colophon > .cap .col .plugin.map .view > .wrapper .descriptor h3 {
+              text-transform: uppercase;
+              color: white;
+              font-family: "Oswald", sans-serif;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 14px;
+              line-height: 1.6;
+              margin: 0; }
+            #colophon > .cap .col .plugin.map .view > .wrapper .descriptor .address {
+              color: white;
+              font-family: "Oswald", sans-serif;
+              letter-spacing: 1px;
+              font-size: 14px;
+              line-height: 1.6;
+              font-weight: 300; }
 
 article.events {
   background-color: #e5e5e5; }

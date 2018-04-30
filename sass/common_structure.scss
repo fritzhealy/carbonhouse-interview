@@ -659,50 +659,52 @@ img {
                     .view {
                         @include flexbox-flex(1,1,auto);
                         padding: 10px;
-                        position: relative;
                         background-color: $color__lightest-grey;
-                        img.map {
-                            width: 100%;
-                            display: block;
-                        }
-                        img.wayfairer {
-                            position: absolute;
-                            bottom: 48%;
-                            left: 24%;
-                            z-index: 1;
-                            width: 30px;
-                        }
-                        .descriptor {
-                            background-image: url(./images/bubble.png);
-                            background-position: center;
-                            background-size: 100% auto;
-                            background-repeat: no-repeat;
-                            padding: 10px 10px 10px 20px;
-                            position: absolute;
-                            bottom: calc(48% - 54.5px);
-                            left: calc(24% + 40px);
-                            z-index: 2;
-                            @media screen and (min-width: $midwidth){
-                                padding: 20px 20px 20px 30px;
-                                bottom: calc(48% - 67px);
+                        >.wrapper {                        
+                            position: relative;
+                            img.map {
+                                width: 100%;
+                                display: block;
                             }
-                            h3 {
-                                text-transform: uppercase;
-                                color: white;
-                                font-family: $font_one;
-                                text-transform: uppercase;
-                                letter-spacing: 1px;
-                                font-size: 14px;
-                                line-height: 1.6;
-                                margin: 0;
+                            img.wayfairer {
+                                position: absolute;
+                                bottom: 48%;
+                                left: 24%;
+                                z-index: 1;
+                                width: 30px;
                             }
-                            .address {
-                                color: white;
-                                font-family: $font_one;
-                                letter-spacing: 1px;
-                                font-size: 14px;
-                                line-height: 1.6;
-                                font-weight: 300;
+                            .descriptor {
+                                background-image: url(./images/bubble.png);
+                                background-position: center;
+                                background-size: 100% auto;
+                                background-repeat: no-repeat;
+                                padding: 10px 10px 10px 20px;
+                                position: absolute;
+                                bottom: calc(48% - 54.5px);
+                                left: calc(24% + 40px);
+                                z-index: 2;
+                                @media screen and (min-width: $midwidth){
+                                    padding: 20px 20px 20px 30px;
+                                    bottom: calc(48% - 67px);
+                                }
+                                h3 {
+                                    text-transform: uppercase;
+                                    color: white;
+                                    font-family: $font_one;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    font-size: 14px;
+                                    line-height: 1.6;
+                                    margin: 0;
+                                }
+                                .address {
+                                    color: white;
+                                    font-family: $font_one;
+                                    letter-spacing: 1px;
+                                    font-size: 14px;
+                                    line-height: 1.6;
+                                    font-weight: 300;
+                                }
                             }
                         }
                     }
