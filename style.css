@@ -472,13 +472,8 @@ img {
         #colophon > .cap .col .plugin.social .social.bar ul li {
           background-color: black;
           text-align: center;
-          font-family: "Oswald", sans-serif;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-size: 16px;
-          padding: 14px;
+          padding: 13px;
           line-height: 1.2;
-          text-decoration: none;
           display: block;
           float: left;
           width: 33.33333%;
@@ -497,10 +492,17 @@ img {
             padding: 16px; }
           #colophon > .cap .col .plugin.social .social.bar ul li .text {
             color: white;
-            display: none; }
+            display: none;
+            font-family: "Oswald", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px; }
             @media screen and (min-width: 900px) {
               #colophon > .cap .col .plugin.social .social.bar ul li .text {
                 display: inline; } }
+            @media screen and (min-width: 1200px) {
+              #colophon > .cap .col .plugin.social .social.bar ul li .text {
+                font-size: 16px; } }
           #colophon > .cap .col .plugin.social .social.bar ul li i {
             transform: scale(1);
             transition: all 0.2s;
@@ -687,19 +689,24 @@ img {
           display: block; }
         #colophon > .cap .col .plugin.map .view img.wayfairer {
           position: absolute;
-          top: 38%;
-          left: 23%;
-          z-index: 1; }
+          bottom: 48%;
+          left: 24%;
+          z-index: 1;
+          width: 30px; }
         #colophon > .cap .col .plugin.map .view .descriptor {
           background-image: url(./images/bubble.png);
           background-position: center;
           background-size: 100% auto;
           background-repeat: no-repeat;
-          padding: 20px 20px 20px 30px;
+          padding: 10px 10px 10px 20px;
           position: absolute;
-          top: 34%;
-          left: 30%;
+          bottom: calc(48% - 54.5px);
+          left: calc(24% + 40px);
           z-index: 2; }
+          @media screen and (min-width: 900px) {
+            #colophon > .cap .col .plugin.map .view .descriptor {
+              padding: 20px 20px 20px 30px;
+              bottom: calc(48% - 67px); } }
           #colophon > .cap .col .plugin.map .view .descriptor h3 {
             text-transform: uppercase;
             color: white;
