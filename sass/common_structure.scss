@@ -413,7 +413,7 @@ img {
             @include flexbox-align-items(stretch);
             @include flexbox-justify(flex-start);
             @include flexbox-direction(column);
-            >header {
+            >.h-wrapper {
                 h2 {
                     font-family: $font_one;
                     text-transform: uppercase;

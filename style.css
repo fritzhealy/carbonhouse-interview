@@ -428,22 +428,22 @@ img {
     justify-content: flex-start;
     flex-direction: column;
     -ms-flex-direction: column; }
-    #colophon > .cap .col > header h2 {
+    #colophon > .cap .col > .h-wrapper h2 {
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
       font-size: 25px;
       letter-spacing: 1px;
       margin: 0 10px 0 0; }
       @media screen and (min-width: 900px) {
-        #colophon > .cap .col > header h2 {
+        #colophon > .cap .col > .h-wrapper h2 {
           display: inline-block; } }
-    #colophon > .cap .col > header .descriptor {
+    #colophon > .cap .col > .h-wrapper .descriptor {
       color: #de53f3;
       font-style: italic;
       font-family: "Merriweather", serif;
       font-size: 16px; }
       @media screen and (min-width: 900px) {
-        #colophon > .cap .col > header .descriptor {
+        #colophon > .cap .col > .h-wrapper .descriptor {
           display: inline-block; } }
     #colophon > .cap .col .plugin {
       margin: 20px 0 0 0;
