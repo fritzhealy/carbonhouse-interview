@@ -30,7 +30,7 @@ img {
   padding-left: 10px !important;
   padding-right: 10px !important;
   margin: 0 auto; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 900px) {
     .cap {
       padding-right: 42px !important;
       padding-left: 42px !important; } }
@@ -51,13 +51,14 @@ img {
   width: 250px;
   z-index: 100;
   background-color: black; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 900px) {
     #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu {
+      padding: 0;
       position: static;
       background-color: transparent;
       width: auto;
       float: right;
-      width: 63.95%;
+      width: 75%;
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6, BB7 */
       display: -ms-flexbox;
@@ -71,9 +72,12 @@ img {
       align-items: stretch;
       -ms-flex-item-align: stretch;
       justify-content: flex-end; } }
+  @media screen and (min-width: 900px) and (min-width: 1200px) {
+    #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu {
+      width: 63.95%; } }
   #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu.active {
     display: block; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu.active {
         display: -webkit-box;
         /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -92,13 +96,13 @@ img {
     font-family: "Oswald", sans-serif;
     letter-spacing: 1px;
     font-size: 18px; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu #close-menu {
         display: none; } }
   #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu ul#mobile-nav {
     margin: 0;
     padding: 0; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu ul#mobile-nav {
         display: none; } }
     #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu ul#mobile-nav li {
@@ -111,7 +115,7 @@ img {
         font-family: "Oswald", sans-serif;
         letter-spacing: 1px;
         font-size: 18px; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 900px) {
     #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper {
       padding: 5px 0;
       -webkit-box-flex: 1 1 auto;
@@ -139,31 +143,40 @@ img {
     text-decoration: none;
     margin: 10px 0 0 0;
     display: inline-block; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper > a.connect {
         font-size: 12px;
-        margin: 0 10px; } }
+        margin: 0 10px;
+        transform: scale(1);
+        transition: all 0.2s; } }
+    @media screen and (min-width: 900px) {
+      #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper > a.connect:hover {
+        transform: scale(1.2); } }
   #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper .social {
     margin: 10px 0 0 0; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper .social {
         margin: 0 30px 0 10px; } }
     #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper .social a {
       display: inline-block;
       margin: 0 5px; }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 900px) {
         #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper .social a {
-          margin: 0 10px; } }
+          margin: 0 10px;
+          transform: scale(1);
+          transition: all 0.2s; } }
+      @media screen and (min-width: 900px) {
+        #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper .social a:hover {
+          transform: scale(1.2); } }
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper .social a i {
         font-size: 20px;
         color: white; }
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 900px) {
           #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper .social a i {
-            margin: 0 10px;
             color: #000000; } }
   #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper #search {
     margin: 10px 0 0 0; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper #search {
         margin: 0 20px;
         -webkit-box-flex: 1 1 auto;
@@ -186,6 +199,8 @@ img {
       align-items: center;
       -ms-flex-item-align: center;
       justify-content: space-between; }
+      #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper #search .wrapper:hover {
+        background-color: #e5e5e5; }
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper #search .wrapper input {
         -webkit-box-flex: 0 1 auto;
         -moz-box-flex: 0 1 auto;
@@ -199,7 +214,7 @@ img {
         font-weight: 300;
         min-width: 0;
         text-transform: uppercase; }
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 900px) {
           #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu > .wrapper #search .wrapper input {
             -webkit-box-flex: 1 1 auto;
             -moz-box-flex: 1 1 auto;
@@ -264,10 +279,19 @@ img {
     color: inherit;
     text-decoration: none;
     margin: 10px 0 20px 0; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu a.login {
         padding: 10px 42px 10px 20px;
         margin: 0; } }
+    @media screen and (min-width: 900px) {
+      #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu a.login:hover {
+        background-color: #d345e8; } }
+    @media screen and (min-width: 900px) {
+      #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu a.login:hover .text {
+        text-shadow: 1px 1px 2px black; } }
+    @media screen and (min-width: 900px) {
+      #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu a.login:hover img {
+        transform: scale(1.2); } }
     #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu a.login .text {
       color: white;
       font-family: "Oswald", sans-serif;
@@ -275,6 +299,8 @@ img {
       font-size: 12px;
       text-transform: uppercase; }
     #masthead > .row-1 > .cap-nopad > .outer-wrapper#mobile-menu a.login img {
+      transform: scale(1);
+      transition: all 0.2s;
       margin: 0 0 0 10px;
       display: block;
       width: 26px; }
@@ -296,80 +322,97 @@ img {
     align-items: center;
     -ms-flex-item-align: center;
     justify-content: space-between; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       #masthead > .row-2 > .cap {
-        padding: 20px 0; } }
+        padding: 20px 42px !important; } }
     #masthead > .row-2 > .cap #logo {
       width: 45%;
-      margin: 0; }
-      @media screen and (min-width: 600px) {
+      margin: 0;
+      max-width: 219px; }
+      @media screen and (min-width: 900px) {
         #masthead > .row-2 > .cap #logo {
           width: 20%;
-          margin: -54px 0 0 0;
-          max-width: 219px; } }
+          margin: -54px 0 0 0; } }
       #masthead > .row-2 > .cap #logo a {
         display: block; }
         #masthead > .row-2 > .cap #logo a img {
           width: 100%;
           display: block; }
-    @media screen and (min-width: 600px) {
-      #masthead > .row-2 > .cap > .wrapper {
-        width: 65%; } }
-    #masthead > .row-2 > .cap > .wrapper #hamburger {
-      color: white;
-      font-size: 30px;
-      cursor: pointer; }
-      @media screen and (min-width: 600px) {
-        #masthead > .row-2 > .cap > .wrapper #hamburger {
-          display: none; } }
-    #masthead > .row-2 > .cap > .wrapper ul {
-      display: none;
-      margin: 0;
-      padding: 0; }
-      @media screen and (min-width: 600px) {
-        #masthead > .row-2 > .cap > .wrapper ul {
-          display: -webkit-box;
-          /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-          display: -ms-flexbox;
-          /* TWEENER - IE 10 */
-          display: -webkit-flex;
-          /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-          display: flex;
-          /* NEW, Spec - Firefox, Chrome, Opera */
-          align-content: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -ms-flex-item-align: center;
-          justify-content: space-between;
-          display: block; } }
-      #masthead > .row-2 > .cap > .wrapper ul li {
-        display: block;
-        margin: 10px 0 0 0; }
-        @media screen and (min-width: 600px) {
-          #masthead > .row-2 > .cap > .wrapper ul li {
-            display: inline-block;
-            margin: 0 30px; } }
-        @media screen and (min-width: 600px) {
-          #masthead > .row-2 > .cap > .wrapper ul li:first-child {
-            margin-left: 10px; } }
-        #masthead > .row-2 > .cap > .wrapper ul li a {
-          color: white;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-family: "Oswald", sans-serif;
-          letter-spacing: 1px;
-          font-size: 18px; }
+    #masthead > .row-2 > .cap > .wrapper {
+      padding-right: 10px; }
+      @media screen and (min-width: 900px) {
+        #masthead > .row-2 > .cap > .wrapper {
+          width: 75%;
+          padding: 0; } }
+      @media screen and (min-width: 1200px) {
+        #masthead > .row-2 > .cap > .wrapper {
+          width: 65%; } }
+      #masthead > .row-2 > .cap > .wrapper #hamburger {
+        cursor: pointer;
+        width: 32px; }
+        @media screen and (min-width: 900px) {
+          #masthead > .row-2 > .cap > .wrapper #hamburger {
+            display: none; } }
+      #masthead > .row-2 > .cap > .wrapper ul {
+        display: none;
+        margin: 0;
+        padding: 0; }
+        @media screen and (min-width: 900px) {
+          #masthead > .row-2 > .cap > .wrapper ul {
+            display: -webkit-box;
+            /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            display: -webkit-flex;
+            /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;
+            /* NEW, Spec - Firefox, Chrome, Opera */
+            align-content: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-item-align: center;
+            justify-content: space-between; } }
+        #masthead > .row-2 > .cap > .wrapper ul li {
+          display: block;
+          margin: 10px 0 0 0; }
+          @media screen and (min-width: 900px) {
+            #masthead > .row-2 > .cap > .wrapper ul li {
+              display: inline-block;
+              margin: 0 30px;
+              transform: scale(1);
+              transition: all 0.2s; } }
+          @media screen and (min-width: 900px) {
+            #masthead > .row-2 > .cap > .wrapper ul li:hover {
+              transform: scale(1.2); } }
+          @media screen and (min-width: 900px) {
+            #masthead > .row-2 > .cap > .wrapper ul li:first-child {
+              margin-left: 10px; } }
+          #masthead > .row-2 > .cap > .wrapper ul li a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "Oswald", sans-serif;
+            letter-spacing: 1px;
+            font-size: 18px; }
 
 #colophon > .cap {
-  padding: 50px 0; }
-  #colophon > .cap > .col-1 {
-    margin-right: 6px;
-    width: calc(50% - 6px); }
+  padding: 30px 0; }
+  @media screen and (min-width: 900px) {
+    #colophon > .cap {
+      padding: 50px 0; } }
+  @media screen and (min-width: 900px) {
+    #colophon > .cap > .col-1 {
+      margin-right: 6px;
+      width: calc(50% - 6px);
+      float: left; } }
   #colophon > .cap > .col-2 {
-    margin-left: 6px;
-    width: calc(50% - 6px); }
+    margin: 30px 0 0 0; }
+    @media screen and (min-width: 900px) {
+      #colophon > .cap > .col-2 {
+        margin: 0 0 0 6px;
+        width: calc(50% - 6px);
+        float: left; } }
   #colophon > .cap .col {
-    float: left;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;
@@ -390,14 +433,18 @@ img {
       text-transform: uppercase;
       font-size: 25px;
       letter-spacing: 1px;
-      margin: 0 10px 0 0;
-      display: inline-block; }
+      margin: 0 10px 0 0; }
+      @media screen and (min-width: 900px) {
+        #colophon > .cap .col > header h2 {
+          display: inline-block; } }
     #colophon > .cap .col > header .descriptor {
       color: #de53f3;
       font-style: italic;
       font-family: "Merriweather", serif;
-      font-size: 16px;
-      display: inline-block; }
+      font-size: 16px; }
+      @media screen and (min-width: 900px) {
+        #colophon > .cap .col > header .descriptor {
+          display: inline-block; } }
     #colophon > .cap .col .plugin {
       margin: 20px 0 0 0;
       -webkit-box-flex: 1 1 auto;
@@ -418,12 +465,11 @@ img {
       justify-content: flex-start;
       flex-direction: column;
       -ms-flex-direction: column; }
-      #colophon > .cap .col .plugin.twitter .social.bar ul {
+      #colophon > .cap .col .plugin.social .social.bar ul {
         margin: 0;
         padding: 0; }
-        #colophon > .cap .col .plugin.twitter .social.bar ul li {
+        #colophon > .cap .col .plugin.social .social.bar ul li {
           background-color: black;
-          color: white;
           text-align: center;
           font-family: "Oswald", sans-serif;
           text-transform: uppercase;
@@ -437,30 +483,34 @@ img {
           width: 33.33333%;
           border-right: 1px solid white;
           cursor: pointer; }
-          #colophon > .cap .col .plugin.twitter .social.bar ul li:last-child {
+          @media screen and (min-width: 900px) {
+            #colophon > .cap .col .plugin.social .social.bar ul li:hover i {
+              transform: scale(1.2); } }
+          #colophon > .cap .col .plugin.social .social.bar ul li:last-child {
             border-right: none; }
-          #colophon > .cap .col .plugin.twitter .social.bar ul li.active {
+          #colophon > .cap .col .plugin.social .social.bar ul li.active {
             background-image: url(./images/pink-box.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat; }
-          #colophon > .cap .col .plugin.twitter .social.bar ul li i {
+          #colophon > .cap .col .plugin.social .social.bar ul li .text {
+            color: white;
+            display: none; }
+            @media screen and (min-width: 900px) {
+              #colophon > .cap .col .plugin.social .social.bar ul li .text {
+                display: inline; } }
+          #colophon > .cap .col .plugin.social .social.bar ul li i {
+            transform: scale(1);
+            transition: all 0.2s;
             margin: 0 5px 0 0;
             font-size: 20px;
             display: inline-block;
             color: white; }
-      #colophon > .cap .col .plugin.twitter .view {
+      #colophon > .cap .col .plugin.social .view {
+        display: none;
         -webkit-box-flex: 1 1 auto;
         -moz-box-flex: 1 1 auto;
         flex: 1 1 auto;
-        display: -webkit-box;
-        /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;
-        /* TWEENER - IE 10 */
-        display: -webkit-flex;
-        /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;
-        /* NEW, Spec - Firefox, Chrome, Opera */
         align-content: stretch;
         -ms-flex-align: stretch;
         align-items: stretch;
@@ -471,7 +521,16 @@ img {
         margin: 20px 0 0 0;
         padding: 10px 6px 20px 6px;
         background-color: #e5e5e5; }
-        #colophon > .cap .col .plugin.twitter .view > .row-1 {
+        #colophon > .cap .col .plugin.social .view.active {
+          display: -webkit-box;
+          /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+          display: -ms-flexbox;
+          /* TWEENER - IE 10 */
+          display: -webkit-flex;
+          /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+          display: flex;
+          /* NEW, Spec - Firefox, Chrome, Opera */ }
+        #colophon > .cap .col .plugin.social .view > .row-1 {
           padding: 0 20px 10px 20px;
           display: -webkit-box;
           /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -486,26 +545,27 @@ img {
           align-items: center;
           -ms-flex-item-align: center;
           justify-content: space-between; }
-          #colophon > .cap .col .plugin.twitter .view > .row-1 > .col-1 {
+          #colophon > .cap .col .plugin.social .view > .row-1 > .col-1 {
             font-family: "Oswald", sans-serif;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 16px; }
-            #colophon > .cap .col .plugin.twitter .view > .row-1 > .col-1 .pink {
-              color: #de53f3; }
-          #colophon > .cap .col .plugin.twitter .view > .row-1 > .col-2 i {
+            #colophon > .cap .col .plugin.social .view > .row-1 > .col-1 a {
+              color: #de53f3;
+              text-decoration: none; }
+          #colophon > .cap .col .plugin.social .view > .row-1 > .col-2 i {
             color: #de53f3;
             cursor: pointer;
             font-size: 28px;
             display: inline-block; }
-            #colophon > .cap .col .plugin.twitter .view > .row-1 > .col-2 i:first-child {
+            #colophon > .cap .col .plugin.social .view > .row-1 > .col-2 i:first-child {
               margin-right: 10px; }
-        #colophon > .cap .col .plugin.twitter .view > .row-2 {
+        #colophon > .cap .col .plugin.social .view > .row-2 {
           -webkit-box-flex: 1 1 auto;
           -moz-box-flex: 1 1 auto;
           flex: 1 1 auto;
           overflow: hidden; }
-          #colophon > .cap .col .plugin.twitter .view > .row-2 .post {
+          #colophon > .cap .col .plugin.social .view > .row-2 .post {
             margin: 0 6px;
             height: 100%;
             width: 220px;
@@ -526,23 +586,25 @@ img {
             justify-content: flex-start;
             flex-direction: column;
             -ms-flex-direction: column; }
-            #colophon > .cap .col .plugin.twitter .view > .row-2 .post .meta {
+            #colophon > .cap .col .plugin.social .view > .row-2 .post .meta {
               text-transform: uppercase;
               font-size: 16px;
               font-family: "Oswald", sans-serif;
               letter-spacing: 1px;
               padding: 15px; }
-              #colophon > .cap .col .plugin.twitter .view > .row-2 .post .meta i {
+              #colophon > .cap .col .plugin.social .view > .row-2 .post .meta i {
                 font-size: 20px;
                 color: #de53f3; }
-            #colophon > .cap .col .plugin.twitter .view > .row-2 .post .copy {
+              #colophon > .cap .col .plugin.social .view > .row-2 .post .meta a {
+                text-decoration: none; }
+            #colophon > .cap .col .plugin.social .view > .row-2 .post .copy {
               padding: 0 15px 15px 15px;
               font-family: "Lato", sans-serif;
               font-size: 12px;
               letter-spacing: 1px; }
-              #colophon > .cap .col .plugin.twitter .view > .row-2 .post .copy a {
+              #colophon > .cap .col .plugin.social .view > .row-2 .post .copy a {
                 color: #de53f3; }
-            #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar {
+            #colophon > .cap .col .plugin.social .view > .row-2 .post .bottom-bar {
               background-color: #de53f3;
               margin: auto 0 0 0;
               padding: 5px 15px;
@@ -559,21 +621,28 @@ img {
               align-items: center;
               -ms-flex-item-align: center;
               justify-content: space-between; }
-              #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .date-time {
+              #colophon > .cap .col .plugin.social .view > .row-2 .post .bottom-bar .date-time {
                 color: white;
                 text-transform: uppercase;
                 font-size: 12px;
                 font-family: "Oswald", sans-serif;
                 letter-spacing: 1px; }
-              #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .share a {
+              #colophon > .cap .col .plugin.social .view > .row-2 .post .bottom-bar .share a {
                 text-decoration: none;
                 display: inline-block;
                 margin: 0 2px; }
-                #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .share a:first-child {
+                @media screen and (min-width: 900px) {
+                  #colophon > .cap .col .plugin.social .view > .row-2 .post .bottom-bar .share a {
+                    transform: scale(1);
+                    transition: all 0.2s; } }
+                @media screen and (min-width: 900px) {
+                  #colophon > .cap .col .plugin.social .view > .row-2 .post .bottom-bar .share a:hover {
+                    transform: scale(1.2); } }
+                #colophon > .cap .col .plugin.social .view > .row-2 .post .bottom-bar .share a:first-child {
                   margin-left: 0; }
-                #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .share a:last-child {
+                #colophon > .cap .col .plugin.social .view > .row-2 .post .bottom-bar .share a:last-child {
                   margin-right: 0; }
-                #colophon > .cap .col .plugin.twitter .view > .row-2 .post .bottom-bar .share a i {
+                #colophon > .cap .col .plugin.social .view > .row-2 .post .bottom-bar .share a i {
                   font-size: 12px;
                   color: white; }
       #colophon > .cap .col .plugin.map .address.bar {
@@ -585,14 +654,18 @@ img {
         letter-spacing: 1px;
         font-size: 16px;
         padding: 15px;
-        line-height: 1.2; }
+        line-height: 1.6; }
         #colophon > .cap .col .plugin.map .address.bar .light {
           font-weight: 300;
           font-size: 14px;
           text-transform: initial;
           color: white;
-          display: inline-block;
-          margin-left: 20px; }
+          display: block;
+          line-height: 1.6; }
+          @media screen and (min-width: 900px) {
+            #colophon > .cap .col .plugin.map .address.bar .light {
+              display: inline-block;
+              margin-left: 20px; } }
       #colophon > .cap .col .plugin.map .view {
         -webkit-box-flex: 1 1 auto;
         -moz-box-flex: 1 1 auto;
@@ -646,20 +719,18 @@ article.events {
             width: 28px; }
     article.events > .cap > .row-2 section.event {
       line-height: 1.2;
-      margin: 20px 0 0 0; }
+      margin: 20px 0 0 0;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
       @media screen and (min-width: 600px) {
         article.events > .cap > .row-2 section.event {
           width: calc(1/3*100% - 8px);
           margin: 0 6px 12px 6px;
           float: left; } }
+      article.events > .cap > .row-2 section.event:hover {
+        box-shadow: 1px 1px 5px black; }
       article.events > .cap > .row-2 section.event:first-child {
         margin-top: 0; }
-      @media screen and (min-width: 1200px) {
-        article.events > .cap > .row-2 section.event.first {
-          margin-left: 0; } }
-      @media screen and (min-width: 1200px) {
-        article.events > .cap > .row-2 section.event.last {
-          margin-right: 0; } }
       article.events > .cap > .row-2 section.event > a {
         display: -webkit-box;
         /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -768,6 +839,59 @@ article.events {
             vertical-align: middle;
             margin-right: 20px;
             width: 34px; }
+    @media screen and (min-width: 600px) {
+      article.events > .cap > .row-2.list section.event {
+        width: 100%;
+        float: none;
+        margin: 12px 0 0 0; } }
+    @media screen and (min-width: 600px) {
+      article.events > .cap > .row-2.list section.event > a {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;
+        /* NEW, Spec - Firefox, Chrome, Opera */
+        align-content: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        -ms-flex-item-align: stretch;
+        justify-content: flex-start;
+        flex-wrap: nowrap; } }
+    @media screen and (min-width: 600px) {
+      article.events > .cap > .row-2.list section.event > a .photo {
+        display: none; } }
+    @media screen and (min-width: 600px) {
+      article.events > .cap > .row-2.list section.event > a .date {
+        width: 500px; } }
+    @media screen and (min-width: 600px) {
+      article.events > .cap > .row-2.list section.event > a .artist {
+        text-align: left;
+        padding: 10px 20px; } }
+    @media screen and (min-width: 900px) {
+      article.events > .cap > .row-2.list section.event > a .artist h3 {
+        display: inline-block;
+        margin: 0; } }
+    @media screen and (min-width: 900px) {
+      article.events > .cap > .row-2.list section.event > a .artist .tour {
+        display: inline-block;
+        margin: 0 0 0 10px; } }
+    @media screen and (min-width: 600px) and (max-width: 899px) {
+      article.events > .cap > .row-2.grid section.event:nth-child(even) {
+        width: calc(50% - 6px);
+        margin-right: 0; } }
+    @media screen and (min-width: 600px) and (max-width: 899px) {
+      article.events > .cap > .row-2.grid section.event:nth-child(odd) {
+        width: calc(50% - 6px);
+        margin-left: 0; } }
+    @media screen and (min-width: 900px) {
+      article.events > .cap > .row-2.grid section.event.first {
+        margin-left: 0; } }
+    @media screen and (min-width: 900px) {
+      article.events > .cap > .row-2.grid section.event.last {
+        margin-right: 0; } }
 
 .newsletter {
   background-image: url(./images/purple-background.jpg);
@@ -775,14 +899,14 @@ article.events {
   background-position: center;
   background-repeat: no-repeat;
   padding: 45px 0; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 900px) {
     .newsletter {
       padding: 90px 20px; } }
   .newsletter > .cap .signup-box {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 30px 15px; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       .newsletter > .cap .signup-box {
         width: 55%;
         margin: 0 auto;
@@ -820,3 +944,6 @@ article.events {
           padding: 10px 60px;
           width: auto;
           display: inline-block; } }
+      .newsletter > .cap .signup-box a:hover {
+        background-color: #de53f3;
+        text-shadow: 1px 1px 2px black; }

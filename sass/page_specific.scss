@@ -44,23 +44,18 @@ article.events {
             section.event {
                 line-height: 1.2;
                 margin: 20px 0 0 0;
+                -webkit-transition: all 0.2s;
+                transition: all 0.2s;
                 @media screen and (min-width: $tabwidth){
                     width: calc(1/3*100% - 8px);
                     margin: 0 6px 12px 6px;
                     float: left;
                 }
+                &:hover {
+                    box-shadow: 1px 1px 5px black;
+                }
                 &:first-child {
                     margin-top: 0;
-                }
-                &.first {
-                    @media screen and (min-width: $deskwidth) {
-                        margin-left: 0;
-                    }
-                }
-                &.last {
-                    @media screen and (min-width: $deskwidth){
-                        margin-right: 0;
-                    }
                 }
                 >a {
                     @include flexbox();
@@ -176,6 +171,79 @@ article.events {
                     }
                 }
             }
+            &.list {
+                section.event {
+                    @media screen and (min-width: $tabwidth){
+                        width: 100%;
+                        float: none;
+                        margin: 12px 0 0 0;
+                    }
+                    >a {
+                        @media screen and (min-width: $tabwidth){
+                            @include flexbox();
+                            @include flexbox-align-content(stretch);
+                            @include flexbox-align-items(stretch);
+                            @include flexbox-justify(flex-start);
+                            @include flexbox-wrap(nowrap);
+                        }
+                        .photo {
+                            @media screen and (min-width: $tabwidth){
+                                display: none;
+                            }
+                        }
+                        .date {
+                            @media screen and (min-width: $tabwidth){
+                                width: 500px;
+                            }
+                        }
+                        .artist {
+                            @media screen and (min-width: $tabwidth){
+                                text-align: left;
+                                padding: 10px 20px;
+                            }
+                            h3 {
+                                @media screen and (min-width: $midwidth){
+                                    display: inline-block;
+                                    margin: 0;
+                                }
+                            }
+                            .tour {
+                                @media screen and (min-width: $midwidth){
+                                    display: inline-block;
+                                    margin: 0 0 0 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.grid {
+                section.event {
+                    &:nth-child(even){
+                        @media screen and (min-width: $tabwidth) and (max-width: 899px) {
+                            width: calc(50% - 6px);
+                            margin-right: 0;
+                        }
+    
+                    }
+                    &:nth-child(odd){
+                        @media screen and (min-width: $tabwidth) and (max-width: 899px) {
+                            width: calc(50% - 6px);
+                            margin-left: 0;
+                        }
+                    }
+                    &.first {
+                        @media screen and (min-width: $midwidth) {
+                            margin-left: 0;
+                        }
+                    }
+                    &.last {
+                        @media screen and (min-width: $midwidth){
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -185,7 +253,7 @@ article.events {
     background-position: center;
     background-repeat: no-repeat;
     padding: 45px 0;
-    @media screen and (min-width: $tabwidth){
+    @media screen and (min-width: $midwidth){
         padding: 90px 20px;
     }
     >.cap {
@@ -193,7 +261,7 @@ article.events {
             background-color: rgba(0,0,0,0.7);
             text-align: center;
             padding: 30px 15px;
-            @media screen and (min-width: $tabwidth){
+            @media screen and (min-width: $midwidth){
                 width: 55%;
                 margin: 0 auto;
                 padding: 60px 20px;
@@ -232,6 +300,10 @@ article.events {
                     padding: 10px 60px;
                     width: auto;
                     display: inline-block;
+                }
+                &:hover {
+                    background-color: $color__pink;
+                    text-shadow: 1px 1px 2px black;
                 }
             }
         }
