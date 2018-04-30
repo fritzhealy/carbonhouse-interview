@@ -504,9 +504,9 @@ img {
                         @include flexbox-justify(flex-start);
                         @include flexbox-direction(column);
                         margin: 20px 0 0 0;
-                        padding: 10px 6px 20px 6px;
+                        padding: 10px 12px 20px 12px;
                         background-color: $color__medium-grey;
-                        &.active {                        
+                        &.active {
                             @include flexbox();
                         }
                         >.row-1 {
@@ -540,11 +540,11 @@ img {
                         >.row-2 {
                             @include flexbox-flex(1,1,auto);
                             overflow: hidden;
+                            position: relative;
                             .post {
-                                margin: 0 6px;
-                                height: 100%;
+                                margin: 0;
                                 width: 220px;
-                                float: left;
+                                min-height: 200px;
                                 background-color: white;
                                 @include flexbox();
                                 @include flexbox-align-content(stretch);
@@ -631,14 +631,14 @@ img {
                         letter-spacing: 1px;
                         font-size: 16px;
                         padding: 15px;
-                        line-height: 1.6;
+                        line-height: 1.2;
                         .light {
                             font-weight: 300;
                             font-size: 14px;
                             text-transform: initial;
                             color: white;
                             display: block;
-                            line-height: 1.6;
+                            line-height: 1.2;
                             @media screen and (min-width: $midwidth){
                                 display: inline-block;
                                 margin-left: 20px;

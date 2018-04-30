@@ -519,7 +519,7 @@ img {
         flex-direction: column;
         -ms-flex-direction: column;
         margin: 20px 0 0 0;
-        padding: 10px 6px 20px 6px;
+        padding: 10px 12px 20px 12px;
         background-color: #e5e5e5; }
         #colophon > .cap .col .plugin.social .view.active {
           display: -webkit-box;
@@ -564,12 +564,12 @@ img {
           -webkit-box-flex: 1 1 auto;
           -moz-box-flex: 1 1 auto;
           flex: 1 1 auto;
-          overflow: hidden; }
+          overflow: hidden;
+          position: relative; }
           #colophon > .cap .col .plugin.social .view > .row-2 .post {
-            margin: 0 6px;
-            height: 100%;
+            margin: 0;
             width: 220px;
-            float: left;
+            min-height: 200px;
             background-color: white;
             display: -webkit-box;
             /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -654,14 +654,14 @@ img {
         letter-spacing: 1px;
         font-size: 16px;
         padding: 15px;
-        line-height: 1.6; }
+        line-height: 1.2; }
         #colophon > .cap .col .plugin.map .address.bar .light {
           font-weight: 300;
           font-size: 14px;
           text-transform: initial;
           color: white;
           display: block;
-          line-height: 1.6; }
+          line-height: 1.2; }
           @media screen and (min-width: 900px) {
             #colophon > .cap .col .plugin.map .address.bar .light {
               display: inline-block;
